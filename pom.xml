@@ -12,6 +12,10 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Jetty version from
+           https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-maven-plugin/
+        -->
+        <jettyVersion>9.4.12.v20180830</jettyVersion>
     </properties>
 
  <dependencies>
@@ -21,6 +25,23 @@
      <version>8.0</version>
      <scope>provided</scope>
    </dependency>
+
+   <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jettyVersion}</version>
+    </dependency>
+
  </dependencies>
+
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-maven-plugin</artifactId>
+            <version>${jettyVersion}</version>
+        </plugin>
+    </plugins>
+</build>
 
 </project>

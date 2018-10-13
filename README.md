@@ -1,4 +1,5 @@
 # simple-servlet
+
 A simple example of a Java servlet and a JSP. 
 
 
@@ -27,7 +28,15 @@ There are many ways test and run servlets, here are some suggestions.
 
 1. As a Maven build.
 
+    The Jetty plugin is included in ```pom.xml``` enabling Jetty to be installed and started automatically via Maven.  Use this command
+
+    ```mvn jetty:run```
+
+    For more information see https://www.eclipse.org/jetty/documentation/9.4.x/maven-and-jetty.html 
+
 1. Using the VS Code Jetty extension.
 
 1. Using Tomcat.
+
+
 
