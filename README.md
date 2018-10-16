@@ -12,7 +12,7 @@ Java servlets are compiled Java classes that implement all or part of a web appl
 
 ## Java Servlet Pages (JSP)
 
-JSP is a document format combining HTML and Java to create "dynamic" web pages. These pages are delivered by the web server to the client as HTML, but firdt the Java code is run to replace variables with actual values.  For example a JSP web page might look up order details from a database and insert the results in an HTML table. 
+JSP is a document format combining HTML and Java to create "dynamic" web pages. These pages are delivered by the web server to the client as HTML, but first the Java code is run to replace variables with actual values.  For example a JSP web page might look up order details from a database and insert the results in an HTML table. 
 
 If you've used PHP or ASPnet then you will see some strong similarities, at least in the approach to creating web content.
 
@@ -69,8 +69,10 @@ There are many ways test and run servlets, here are some suggestions.
     * Click right on the .war file in the VS Code Explorer view, 
     choose ```Run on Jetty Server``` 
 
-    
 1. Using Tomcat.
+
+Tomcat includes a web interface for managing the web server. You can use this to upload WAR files into the server, and other configuration tasks.  You might also wish to install the ``Tomcat for Java`` VS Code extension.
+
 
 
 
