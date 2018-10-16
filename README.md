@@ -22,6 +22,14 @@ Servlets are usually packaged as ``WAR`` (web archive) files. Like a zip, jar or
 
 To run the servlet build the war file, then deploy using Jetty or Tomcat.
 
+To build the servlet we build the ```package``` target using Maven.  From the command line the command is -
+
+```mvn package```
+
+Which will compile and then package.
+
+Or you could select this from the ```Maven Projects``` in VS Code `Explorer` view.
+
 There are many ways test and run servlets, here are some suggestions.
 
 1. From the command line.
